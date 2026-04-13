@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習問題</title>
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        overflow: scroll;
+      }
+      thead {
+        position: sticky;
+        top: 0;
+        background-color: #eee;
+      }
+      table {
+        border-spacing: 0;
+        height: 300px;
+      }
+      th {
+        border-right: 3px solid #fff;
+      }
+      div {
+        padding: 100px 0;
+        background-color: lightblue;
+        text-align: center;
+      }
+    </style>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>商品名</th>
+            <th>価格</th>
+            <th>在庫状況</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>りんご</td>
+            <td>100円</td>
+            <td>在庫あり</td>
+          </tr>
+          <tr>
+            <td>バナナ</td>
+            <td>80円</td>
+            <td>在庫あり</td>
+          </tr>
+          <tr>
+            <td>みかん</td>
+            <td>120円</td>
+            <td>在庫切れ</td>
+          </tr>
+          <tr>
+            <td>パイナップル</td>
+            <td>500円</td>
+            <td>在庫あり</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <p>テーブルの範囲外です。</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+/* 問題1. 全称セレクタへのスタイル適用 */
+/* この下に解答してください */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 問題2. 要素型セレクタへのスタイル適用 */
+/* この下に解答してください */
+body {
+  padding: 16px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+/* 問題3. classセレクタへのスタイル適用①【段落】
+/* この下に解答してください */
+.text-wrap {
+  margin-bottom: 16px;
+}
+
+.red {
+  color: #ff0000;
+}
+/* 問題4. 子孫セレクタへのスタイル適用 */
+/* この下に解答してください */
+ul li {
+  display: inline-block;
+width: 100px;
+height: 100px;
+list-style: none;
+text-align: center;
+line-height: 100px;
+}
+
+.card01 {
+  background-color: #c2eeff;
+}
+
+.card02 {
+  background-color: #edffbe;
+}
+
+.card03 {
+  background-color: #ffbeda;
+}
+
+/* 問題5. classセレクタへのスタイル適用②【リスト】 */
+/* この下に解答してください */

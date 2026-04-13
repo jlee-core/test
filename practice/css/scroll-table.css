@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+  .price-table {
+    border-collapse: collapse;
+    /* 問題1.スタイルの追加①【テキストの折り返し禁止】 */
+    /* この下に解答してください */
+    white-space: nowrap;
+  }
+
+  .table-wrap {
+    /* 問題2.スタイルの追加②【横スクロール】 */
+    /* この下に解答してください */
+    overflow-x: scroll;
+  }
+}
+
+th,
+td {
+  padding: 12px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  text-align: center;
+}
+
+.price-thead-none {
+  background-color: #ffffff;
+}
+
+.price-thead-th {
+  background-color: #169267;
+  color: #ffffff;
+}
+
+.price-tbody-th {
+  background-color: #36be8e;
+  color: #ffffff;
+}
+
+.price-td {
+  background-color: #dcf2e3;
+}
+
+.cta {
+  background-color: #e0f7fa;
+  text-align: center;
+  padding: 40px;
+  margin-top: 64px;
+}
+
+.cta-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+#free {
+  background-color: #f0f0f0;
+}
