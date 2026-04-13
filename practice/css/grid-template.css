@@ -1,0 +1,44 @@
+.parent div {
+  display: inline-block;
+  padding: 10px;
+}
+
+.child1 {
+  background-color: red;
+  /* 問題1. 各々の子要素に名前を指定してください */
+  grid-area: header;
+}
+
+.child2 {
+  background-color: blue;
+  /* 問題1. 各々の子要素に名前を指定してください */
+  grid-area: left;
+}
+
+.child3 {
+  background-color: yellow;
+  /* 問題1. 各々の子要素に名前を指定してください */
+  grid-area: main;
+}
+
+.child4 {
+  background-color: green;
+  /* 問題1. 各々の子要素に名前を指定してください */
+  grid-area: right;
+}
+
+.child5 {
+  background-color: pink;
+  /* 問題1. 各々の子要素に名前を指定してください */
+  grid-area: footer;
+}
+
+.parent {
+  width: 500px;
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "left main right" auto
+    "footer footer footer" 100px /
+    100px 1fr 10%;
+}
