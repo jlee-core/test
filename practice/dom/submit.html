@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" id="myTextbox" />
+      <input type="submit" />
+    </form>
+    <form id="myFormItem">
+      <input type="text" name="1つ目" placeholder="1つ目" />
+      <input type="text" name="2つ目" placeholder="2つ目" />
+      <input type="text" name="3つ目" placeholder="3つ目" />
+      <button id="resetButton">リセット</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          const text = document.querySelector("#myTextbox").value;
+          if (text == "") {
+            alert("テキストを入力してください");
+            e.preventDefault(); // フォームの送信を止める
+          }
+        });
+
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          if (!confirm("本当に送信しますか？")) {
+            e.preventDefault(); // フォームの送信を止める
+          }
+        });
+
+      <p>好きな食べ物を3つ入力してください。</p>;
+
+      document
+        .getElementById("resetButton")
+        .addEventListener("click", function () {
+          document.getElementById("myFormItem").reset();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="myButton">マウスを置くと赤くなるよ！</button>
+    <div id="mytooltip">マウスを置くと…</div>
+    <script>
+      const button = document.getElementById("myButton");
+      button.addEventListener("mouseover", function () {
+        button.style.backgroundColor = "red";
+      });
+
+      const tooltip = document.getElementById("mytooltip");
+      tooltip.addEventListener(
+        "mouseover",
+        function () {
+          const tips = document.createElement("div");
+          tips.textContent = "テキストが増えるよ！";
+          tooltip.appendChild(tips);
+        },
+        { once: true },
+      ); // このイベントリスナーは一度だけ実行されます
+
+      // ボタンをクリックした際,要素のテキストが変化する
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        this.textContent = "クリック済み";
+      });
+
+      //テキストをホバーした際、テキストの色が変化する
+      const text = document.getElementById("target");
+      text.addEventListener("mouseover", function () {
+        text.style.color = "#0091EA";
+      });
+      text.addEventListener("mouseout", function () {
+        text.style.color = "#000000";
+      });
+
+      // p要素をマウスホバー時にテキストを変更してください
+      const paragraph = document.getElementsByTagName("p");
+
+      for (let i = 0; i < paragraph.length; i++) {
+        paragraph[i].addEventListener("mouseover", (e) => {
+          e.target.textContent = "変更後のテキストだよ";
+        });
+      }
+    </script>
+  </body>
+</html>

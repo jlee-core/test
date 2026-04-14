@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="mySelect">
+      <option value="国内">国内</option>
+      <option value="海外">海外</option>
+    </select>
+
+    <script>
+      const select = document.getElementById("mySelect");
+      select.addEventListener("change", function () {
+        if (select.value === "国内") {
+          alert("選択しました： 国内");
+        } else {
+          alert("選択しました： 海外");
+        }
+      });
+    </script>
+  </body>
+</html>
